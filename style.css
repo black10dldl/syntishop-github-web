@@ -1,0 +1,132 @@
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:#e7e3e3; /* Ajoutez la couleur de fond de votre choix */
+    box-shadow: 0 4px 8px #0000001a; /* Ombre légère pour l'en-tête fixe */
+    z-index: 1000; /* Assure la visibilité au-dessus du contenu de la page */
+  }
+
+
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }     
+}
+
+/* Effet de survol pour les cartes de produit */
+.hover-effect:hover {
+    transform: scale(1.05); /* Agrandir l'élément au survol */
+    transition: transform 0.3s ease; /* Animation de la transition */
+}
+/* Effet de survol pour les cartes de produit avec des changements de couleur */
+.hover-effect:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+    background-color: #f8f9fa; /* Nouvelle couleur de fond au survol */
+    border-color: #f3f5f7; /* Nouvelle couleur de bordure au survol */
+}
+
+/* Styles pour les images des produits */
+.produit img {
+    
+    width: 100%; /* Ajuste la largeur de l'image pour remplir le conteneur */
+    height: 100%; /* Ajuste la hauteur de l'image pour remplir le conteneur */
+    object-fit: cover; /* Empêche le changement de taille de la div tout en remplissant l'espace */
+    border-radius: 20px; /* Coins arrondis pour une apparence plus esthétique */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère pour un effet de profondeur */
+    transition: transform 0.3s ease-in-out; /* Animation de survol */
+}
+
+.produit img:hover {
+    transform: scale(1.1); 
+}
+
+/* Styles pour les cartes de produit */
+
+
+.card.produit {
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease-in-out;
+   
+    
+}
+
+.card.produit:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+    /* Styles pour les divs contenant les images des produits */
+.card-body {
+    position: relative;
+    overflow: hidden;
+   
+}
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+    
+}
+
+.card-text {
+    font-size: 14px;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+/* la disposition des elements du produit */
+.d-flex {
+    display: flex !important;
+    justify-content: space-between;
+
+}
+
+.d-flex > div {
+    width: 48%; /* Ajuste la largeur des éléments à l'intérieur de d-flex */
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+/* Exemple de media query pour les smartphones */
+@media (max-width: 767px) {
+    /* Ajoutez vos styles spécifiques pour les smartphones ici */
+}
+
+/* Exemple de media query pour les tablettes */
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Ajoutez vos styles spécifiques pour les tablettes ici */
+}
+
+/* Exemple de media query pour les écrans d'ordinateur */
+@media (min-width: 992px) {
+    /* Ajoutez vos styles spécifiques pour les écrans d'ordinateur ici */
+}
+/* Exemple d'utilisation de pourcentage pour la largeur d'un élément */
+.element {
+    width: 100%;
+}
+
+/* Exemple d'utilisation de rem pour la taille de police */
+.element {
+    font-size: 1.2rem;
+}
+
